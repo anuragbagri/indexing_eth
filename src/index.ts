@@ -18,4 +18,4 @@ async function main() {
  pollBlock(blockNumber);
 }
 
-main(); // execute the main function to log all transaction in latest hashed block in ethereum mainnet.
+main(); // execute the main function to log all transaction in latest hashed block in ethereum mainnet. 

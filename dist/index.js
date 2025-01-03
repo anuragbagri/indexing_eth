@@ -23,4 +23,10 @@ function pollBlock(BlockNumber) {
         console.log(logs);
     });
 }
-pollBlock(21541934); // latest block id from etherscan 
+function main() {
+    return __awaiter(this, void 0, void 0, function* () {
+        const blockNumber = yield provider.getBlockNumber();
+        pollBlock(blockNumber);
+    });
+}
+main(); // execute the main function to log all transaction in latest hashed block in ethereum mainnet. 
